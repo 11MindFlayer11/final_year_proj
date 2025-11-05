@@ -153,8 +153,8 @@ def find_and_draw_coil_orientation(image_path):
 
     print(f"\nFound and drew {object_count} objects.")
 
-    display_img = resize_for_display(output_image, max_width=400)
-    debug_display_img = resize_for_display(processed_img, max_width=400)
+    display_img = resize_for_display(output_image, max_width=500)
+    debug_display_img = resize_for_display(processed_img, max_width=500)
 
     cv2.imshow("Detected Object Orientation", display_img)
     cv2.imshow("Debug: Canny + Close", debug_display_img)
@@ -163,10 +163,10 @@ def find_and_draw_coil_orientation(image_path):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-
+#we need to work on this
 # --- Main execution ---
 if __name__ == "__main__":
     # Make sure this image path has *multiple* objects
-    image_file = r"C:\Users\SHIV\Desktop\test.jpg"
+    image_file = r"C:\Users\SHIV\Desktop\test1.jpg"
 
     find_and_draw_coil_orientation(image_file)
