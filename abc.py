@@ -163,7 +163,7 @@ def find_and_draw_coil_orientation(image_path):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-#we need to work on this
+#we need to work on this, yeah
 # --- Main execution ---
 if __name__ == "__main__":
     # Make sure this image path has *multiple* objects
